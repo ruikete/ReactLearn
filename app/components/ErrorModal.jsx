@@ -1,6 +1,11 @@
 var React = require('react');
 
 var ErrorModal = React.createClass({
+    getDefaultProps: function(){
+        return{
+            title: 'Error Caption'            
+        };
+    },
     componentDidMount: function(){
         var modal = new Foundation.Reveal($('#error-modal'));
         modal.open();
