@@ -29,6 +29,7 @@ module.exports = {
            Examples: 'app/components/examples.jsx',
            WeatherForm:'app/components/WeatherForm.jsx',
            WeatherMessage:'app/components/WeatherMessage.jsx',
+           ErrorModal: 'app/components/ErrorModal.jsx',
            OpenWeatherMap:'app/api/openWeatherMap.jsx'           
         },
         extensions: ['','.js','.jsx']
@@ -42,6 +43,6 @@ module.exports = {
             test: /\.jsx?$/,
             exclude: /(node_modules|bower_components)/
         }]
-    },
-    devtool: 'eval-source-map'//'cheap-module-eval-source-map'
+    }
+    //,devtool: 'eval-source-map'//'cheap-module-eval-source-map'
 };
